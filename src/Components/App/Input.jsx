@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "./WatchListButton";
 export default function Input() {
     const button_prop = {
         icon: 'fa-solid fa-plus',
@@ -9,9 +9,9 @@ export default function Input() {
 
 
     return <>
-        <div className="flex justify-center items-center space-x-1">
-            <input className="border-2 border-blue-700 h-10 px-2" type="text" placeholder="Enter name of the movie/series..." />
-            <Button data={ button_prop } />
+        <div className="flex justify-center items-center">
+            <input className="border border-slate-950 h-10 px-2 focus:outline-none" type="text" placeholder="Enter name of the movie/series..." autoFocus />
+            <button className="bg-slate-950 text-slate-50 h-10 w-10"><i className="fa-solid fa-plus"></i></button>
         </div>
     </>;
 }
