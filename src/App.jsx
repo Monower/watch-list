@@ -66,13 +66,13 @@ export default function App() {
       <div className="flex justify-center items-center h-24 lg:h-52">
         <h3 className="text-[1.5em] lg:text-[4em] font-bold">Welcome to watch-list.</h3>
       </div>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center pb-12">
          <Input />
       </div>
       <div className="flex justify-around">
         <List data={to_watch_list} />
         {/* <List data={watched_list} /> */}
-        <Watchedlist data={watched_list } />
+        {/* <Watchedlist data={watched_list } /> */}
       </div>
     </section>
   </>;
